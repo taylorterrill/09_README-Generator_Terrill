@@ -1,31 +1,39 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-
-const licenceBadge = (license) => {
+const licenceLink = (license) => {
   if (license !== "None") {
-    return license
+    return `* [License](#license)`
+  } else {
+    return ""
+  }
+};
+
+// If there is no license, return an empty string
+const renderLicenseBadge = (license) => {
+  if (license !== "None") {
+    return `![Github licence](http://img.shields.io/badge/license-${(license)}-blue.svg)`
+  } else {
+    return ""
+  }
+};
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+const renderLicenseSection = (license) => {
+  if (license !== "None") {
+    return `## License 
+    This project is licensed under ${license}
+    `
   } else {
     return ""
   }
 }
 
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
 // TODO: Create a function to generate markdown for README
 
 function generateMarkdown(data) {
   return `# ${data.title}
-  ![Github licence](http://img.shields.io/badge/license-${licenceBadge(data.license)}-blue.svg)
-
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -33,7 +41,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  ${licenceLink(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -44,9 +52,7 @@ function generateMarkdown(data) {
   ## Usage 
   ${data.usage}
 
-  ## License 
-  This project is licensed under ${data.license}
-
+  ${renderLicenseSection(data.license)}
   ## Contributing 
   ${data.contributors}
 

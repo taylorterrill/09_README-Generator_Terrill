@@ -1,14 +1,13 @@
-# aa
-  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
-
+# a
+  
 
   ## Description
-  aa
+  a
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -19,9 +18,7 @@
   ## Usage 
   a
 
-  ## License 
-  This project is license under MIT
-
+  
   ## Contributing 
   a
 
@@ -29,4 +26,4 @@
   a
 
   ## Questions
-  If you have any questions about this projects, please contact me directly at aa. You can view more of my projects at https://github.com/aa.
+  If you have any questions about this projects, please contact me directly at a. You can view more of my projects at https://github.com/a.
