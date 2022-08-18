@@ -146,30 +146,3 @@ questions()
     .catch(err => {
         console.log(err);
     });
-
-
-
-/*
-inquirer.prompt({
-    type: 'input',
-    name: 'github',
-    message: 'what is your Github username?',
-    validate: nameInput => {
-        if (nameInput) {
-            return true;
-        } else {
-            console.log('Please enter Github username.');
-            return false;
-        };
-    }
-})
-    .then( answers => {
-        return generateMarkdown(answers);
-    })
-    .then(data => {
-        return writeToFile(data);
-    })
-    .catch(err => {
-        console.log(err);
-    });
-*/

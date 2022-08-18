@@ -1,8 +1,8 @@
-# a
+# README Generator
   
 
   ## Description
-  a
+  Generates a professional README file based on user input.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,17 +13,17 @@
   * [Questions](#questions)
   
   ## Installation 
-  a
+  Run npm i
 
   ## Usage 
-  a
+  Run node index.js
 
   
   ## Contributing 
-  a
+  NA
 
   ## Tests
-  a
+  Run node index.js
 
   ## Questions
-  If you have any questions about this projects, please contact me directly at a. You can view more of my projects at https://github.com/a.
+  If you have any questions about this projects, please contact me directly at taylorpterrill@gmail.com. You can view more of my projects at https://github.com/taylorterrill.
